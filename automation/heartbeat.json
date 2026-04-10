@@ -1,0 +1,22 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-10-27T10:00:00Z",
+  "cache_type": "redis",
+  "redis_version": "7.0.5",
+  "uptime_seconds": 3600,
+  "connected_clients": 12,
+  "memory_usage_mb": 512,
+  "keyspace_hits": 95.5,
+  "keyspace_misses": 4.5,
+  "persistence_enabled": true,
+  "persistence_status": "ok",
+  "replication_role": "master",
+  "replication_connected_slaves": 2,
+  "last_save_time": "2024-10-27T09:59:00Z",
+  "alerts": [
+    {
+      "severity": "info",
+      "message": "Low disk space usage on persistence volume."
+    }
+  ]
+}
