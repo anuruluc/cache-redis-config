@@ -1,22 +1,37 @@
 {
   "status": "healthy",
   "timestamp": "2024-10-27T10:00:00Z",
-  "cache_type": "redis",
-  "redis_version": "7.0.5",
-  "uptime_seconds": 3600,
-  "connected_clients": 12,
-  "memory_usage_mb": 512,
-  "keyspace_hits": 95.5,
-  "keyspace_misses": 4.5,
-  "persistence_enabled": true,
-  "persistence_status": "ok",
-  "replication_role": "master",
-  "replication_connected_slaves": 2,
-  "last_save_time": "2024-10-27T09:59:00Z",
+  "cache_details": {
+    "cache_type": "redis",
+    "redis_version": "7.0.5"
+  },
+  "server_stats": {
+    "uptime_seconds": 3600,
+    "connected_clients": 12,
+    "memory_usage_mb": 512
+  },
+  "performance_metrics": {
+    "keyspace_hits_percent": 95.5,
+    "keyspace_misses_percent": 4.5,
+    "hit_miss_ratio": 21.22
+  },
+  "persistence": {
+    "enabled": true,
+    "status": "ok",
+    "last_save_time": "2024-10-27T09:59:00Z"
+  },
+  "replication": {
+    "role": "master",
+    "connected_slaves": 2
+  },
   "alerts": [
     {
       "severity": "info",
       "message": "Low disk space usage on persistence volume."
     }
-  ]
+  ],
+  "extended_info": {
+    "data_center": "us-east-1",
+    "environment": "production"
+  }
 }
